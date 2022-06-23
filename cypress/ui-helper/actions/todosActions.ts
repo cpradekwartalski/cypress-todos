@@ -25,7 +25,7 @@ export const todosActions = {
         } else if(expectedListCount === 0) {
             cy.get(todosComponent.elements.listItems).should('not.be.visible');
         } else {
-            throw new Error('List element shouldn not be less then zero')
+            throw new Error('List element should not be less then zero')
         }
     },
 
